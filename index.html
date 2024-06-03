@@ -1,0 +1,2801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gogo.mn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<style>
+    @media (max-width: 720px) {
+
+        .uk-float-right {
+            display: block;
+        }
+    }
+
+    @media (min-width: 968px) {
+        /* .container {
+                width: 100%;
+            } */
+    }
+
+    @media (min-width: 1200px) {
+
+        /* .container {
+                width: 100%;
+            } */
+        .uk-float-right {
+            display: none;
+        }
+    }
+
+    @media (min-width: 960px) {
+
+        header {
+            height: 88px;
+        }
+
+        .menubar {
+            display: none;
+        }
+
+        .top-widget {
+            flex: none;
+        }
+    }
+
+    @media (max-width:960px) {
+        logo-img {
+            width: 119px;
+        }
+
+    }
+
+
+    * {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+    
+
+    .uk-float-right {
+        display: none;
+    }
+
+
+
+    body {
+        width: 1200px;
+        margin: auto;
+    }
+
+    .container {
+        /* border: 1px solid gray; */
+        padding: 10px;
+        width: 1200px;
+        margin: auto;
+    }
+
+    /* .box {
+            border: 1px solid grey;
+            padding: 10px;
+        } */
+
+    /* .box img {
+            margin: 0%;
+            padding: 0;
+        } */
+
+    header {
+        display: flex;
+
+    }
+
+    .top-nav {
+        flex: 1;
+    }
+   .top-nav-grid-container{
+        opacity: 0;
+        display: none;
+        column-count: 2;
+        position: absolute;
+        width: fit-content;
+    }
+    .box~li:hover .top-nav-grid-container{
+        opacity: 1;
+        
+    }
+
+
+
+
+    .box ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .box ul > li{
+        font-weight: bold;
+    }
+
+    .fa-fa-search {
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+    }
+
+    .top-widget {
+        width: 259.69px;
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+
+
+    }
+
+    .top-widget-items {
+        width: 54.34px;
+        height: 50px;
+        display: flex;
+    }
+
+    .top-widget-text {
+        font-size: 12px;
+        line-height: 20px;
+        text-align: right;
+
+    }
+
+    .material-symbols-outlined {
+        margin-right: 5px;
+        flex: 1;
+        unicode-bidi: isolate;
+        justify-content: space-evenly;
+
+
+    }
+
+    .top-widget-items-left {
+        margin-top: 5px;
+        flex: 1;
+        font-weight: 500 !important;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    /*      
+        menubar */
+
+    .uk-float-right {
+        float: right;
+    }
+
+    div {
+        display: block;
+        unicode-bidi: isolate;
+    }
+
+    .uk-display-block-burger-menu {
+        display: block !important;
+    }
+
+
+
+
+    /* home-feature */
+    .Home-feature-container {
+        background-color: linear-gradient(180deg, #fff, #f7f7f7);
+    }
+
+    .Home-feature_pic {
+        flex: 1;
+        /* border: 1px solid green; */
+        position: relative;
+
+
+    }
+
+    .Home-feature {
+        display: flex;
+        margin-bottom: 20px;
+        height: 385px;
+        overflow: hidden;
+    }
+
+    .Home-feature__text {
+        flex: 1;
+        /* border: 1px solid green; */
+        background-image: linear-gradient(to right, #cfd9df 100%, #e2ebf0 20%);
+        position: relative;
+    }
+
+    .Home-feature-text-container {
+        margin-left: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-feature-btn {
+        width: 72.41px;
+        height: 30px;
+        background-image: linear-gradient(to right, red, yellow);
+        border: none;
+        border-radius: 45%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        transition: padding 0, 5s;
+        display: inline-block;
+
+    }
+
+    .home-feature-btn:hover {
+        transform: scale(1.2);
+
+    }
+
+    /* .home-feature-btn:hover{
+            transform: scale(1.2);
+        } */
+    .home-feature-text-h2 {
+        margin-bottom: 30px;
+    }
+
+    .home-feature-text-p {
+        margin-bottom: 30px;
+    }
+
+    .Home-feature-text-container>i:hover {
+        transform: rotate(20deg);
+    }
+
+    /* home-feature-end */
+
+    /* homesubfeature  */
+
+    .Home-subfeature {
+        display: block;
+        text-decoration: none;
+        transition: transform 0.5s;
+        position: relative;
+        transition: padding 20px;
+        justify-content: space-between;
+
+    }
+
+    .Home-feature_pic {
+        /* width: 542.5px;
+        height: 385px; */
+    }
+
+    .Home-feature_pic:hover {
+        transform: scale(1.1);
+
+
+    }
+
+    .Home-feature_pic:hover .home-feature-pic-hover {
+        transform: scale(1);
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .Home-feature_pic>img {
+        object-fit: cover;
+        position: relative;
+        transition: transform 0.5s;
+    }
+
+    .home-feature-pic-hover {
+        opacity: 0;
+        width: 542.5px;
+        height: 385px;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.5s;
+        color: white;
+        background-color: rgb(0, 0, 0, 0.4);
+        inset: 0;
+        overflow: hidden;
+
+    }
+
+    /* *subfeature item* */
+    .Home-subfeature {
+        display: flex;
+        gap: 10px;
+        transition: transform 0.5s;
+        overflow: hidden;
+    }
+
+    .subfeature-item {
+        flex: 1;
+        width: 263px;
+        height: 261px;
+        object-fit: cover;
+        transition: transform 0.5s;
+    }
+
+    .subfeature-item:hover {
+        transform: scale(1.1);
+        overflow: hidden;
+    }
+
+    .subfeature-item:hover .subfeature-item-cover {
+        transform: scale(1.1);
+        opacity: 1;
+        overflow: hidden;
+
+    }
+
+    .subfeature-item-cover {
+        opacity: 0;
+        width: 263px;
+        height: 175px;
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.5s;
+        overflow: hidden;
+    }
+
+    .subfeature-item-img {
+        position: relative;
+    }
+
+    .subfeature-item-title {
+        text-align: justify;
+    }
+
+
+
+
+
+    .ad-subfeature {
+        flex: 1;
+    }
+
+    .middle-top {
+        width: 1200px;
+        border: 1px solid aliceblue;
+
+    }
+
+    .middle-container {
+        width: auto;
+        height: 235px;
+        /* border: 1px solid gray; */
+        display: flex;
+        gap: 20px;
+        /* overflow: hidden; */
+        position: relative;
+
+
+    }
+
+    .middle-container-header {
+        margin-top: 30px;
+        margin-bottom: 0%;
+    }
+
+    .middle-container-item {}
+
+    .middle-container-img {
+        position: relative;
+        object-fit: cover;
+        isolation: isolate;
+        width: 170.8px;
+        height: 235px;
+    }
+
+    .middle-container-text {
+        position: absolute;
+        z-index: 1;
+        overflow: hidden;
+        width: 150px;
+        height: 20px;
+        flex-wrap: wrap;
+        z-index: 1;
+        inset: 0;
+        margin-top: 150px;
+        color: white;
+        text-align: justify;
+        font-size: 13px;
+        align-items: center;
+        margin-left: 5px;
+        transition: all 0.5s;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.004);
+    }
+
+    .middle-container-top-logo {
+        position: absolute;
+        z-index: 1;
+        inset: 0;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+    .middle-container-item:hover .middle-container-img>img {
+        transform: scale(1.1);
+
+    }
+
+    .middle-container-item:hover .middle-container-text {
+        transform: translate(0px, 10%);
+        height: 37px;
+    }
+
+    .view-count {
+        color: white;
+        padding: 15px;
+        position: absolute;
+        align-items: center;
+        gap: 5px;
+        bottom: 10px;
+        z-index: 1;
+        width: 100%;
+        height: 20px;
+    }
+
+
+    /* 
+end of middle container */
+
+
+    /* artile */
+
+    .middle-news-container {
+        width: 1200px;
+        /* border: 1px solid green; */
+        display: flex;
+        margin-top: 30px;
+
+    }
+
+    .middle-news-left-article {
+        margin-top: 30px;
+        width: 720px;
+        /* border: 1px solid black; */
+        height: 3127px;
+        flex: 1;
+
+    }
+
+    .calendar-bar-header {
+        width: 103.81px;
+        /* height: 60px; */
+        margin-top: 40px;
+    }
+
+    .calendar-bar {
+        display: flex;
+        gap: 20px;
+    }
+
+    .calendar-bar-header {
+        /* flex: 1; */
+    }
+
+    .calendar-bar-header-top {
+        margin-top: 40px;
+        flex: 1;
+        position: relative;
+        object-fit: cover;
+        transition: transform 0.5s;
+        margin-left: 0;
+        /* margin-left: -100px; */
+    }
+
+    .calendar-bar-header-top:hover {
+        color: #407ce8;
+        transition: transform 0.5s;
+    }
+
+    .calendar-bar-header-top-box:hover {
+        background-color: #407ce8;
+    }
+
+    .home-calendar-more-btn {
+        background: #efefef;
+        height: 27px;
+        line-height: 18px;
+        width: 27px;
+        border-radius: 5px;
+        text-align: center;
+        transition: all .2s ease-in-out;
+    }
+
+    .home-calendar-more-btn,
+    .home-calendar-more-btn:hover {
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+    }
+
+
+
+    .news-container-article-news {
+        width: 720px;
+        height: 150px;
+        /* border: 1px solid green; */
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    .news-container-article-news-img {
+        width: 210px;
+        height: 145px;
+        flex: 1;
+        position: relative;
+        /* border: 1px solid black; */
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .news-container-article-news-img img {
+        display: block;
+        transition: all 0.5s;
+        object-fit: cover;
+    }
+
+    .news-container-article-news-img:hover img {
+        transform: scale(1.1);
+    }
+
+    .news-container-article-news-ad {
+        width: 100%;
+        height: 245px;
+        margin-top: 10px;
+    }
+
+    .news-container-article-news-header {
+        position: absolute;
+        margin-left: 230px;
+        flex-wrap: wrap;
+        width: 480px;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 22px;
+        text-align: justify;
+    }
+
+    .news-container-article-news-text {
+        position: relative;
+        color: #888888;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 5px;
+    }
+  
+    .news-container-see-more {
+        width: 100%;
+        height: 64px;
+        background-color: GREY;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 10px;
+    }
+
+
+    .news-container-aside {
+        width: 290px;
+        height: 3222px;
+        /* border: 1px solid black; */
+        flex: 1;
+        margin-left: 50px;
+       
+
+        /* position: relative; */
+    }
+
+    .news-container-aside-top {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 20px;
+
+    }
+
+    .news-container-aside-top-img>img {
+        width: 400px;
+    }
+
+    .news-container-aside-top-text {
+        font-size: 15px;
+        line-height: 20px;
+        color: #000000;
+        margin-top: 5px;
+        
+        font-weight: bold;
+    }
+
+    .news-container-aside-trend-news {
+        background-color: rgba(253, 250, 245, 1);
+        position: relative;
+        height: 1470px;
+        border: 1px solid red;
+    }
+
+    .news-container-aside-trend-news-item {
+        position: relative;
+        width: 270.88px;
+        height: 134px;
+        margin-left: 50px;
+        justify-content: center;
+        align-content: center;
+        /* border-bottom: 1px dashed ; */
+        /* overflow: hidden; */
+        /* border-bottom: 1px dashed rgba(0, 0, 0, 0.06); */
+    }
+
+
+    .news-container-aside-trend-news-item-number {
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 46px;
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        color: red;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        position: absolute;
+
+    }
+
+    .news-container-aside-trend-news-item-caption {
+        font-size: 14px;
+        line-height: 22px;
+        color: #000000;
+        position: absolute;
+        margin-left: 50px;
+        width: 230px;
+    }
+
+    .news-container-aside-trend-news-item-caption-icon {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .material-symbols-outlined {
+        flex: 1;
+    }
+
+    .news-container-aside-trend-news-item-caption-icon i {
+        flex: 1;
+    }
+
+
+    .news-container-aside-trend-news-item-2 {
+        margin-top: 150px;
+        margin-left: 30px;
+    }
+
+
+    /* end of  */
+
+    /* .news-container-talking {
+        position: relative;
+        width: 100%;
+        height: 548.22px;
+        border: 1px solid green;
+        gap: 10px;
+
+    }
+
+    .news-container-talking-left {
+        position: relative;
+        object-fit: cover;
+        isolation: isolate;
+        margin-top: 20px;
+        left: 20px;
+
+    }
+
+    .news-container-talking-left>h3 {
+        position: absolute;
+        top: calc(50% - 500px/2);
+        width: 466px;
+        height: 84px;
+        z-index: 1;
+        inset: 0;
+        margin-top: 300px;
+        color: #FFFFFF;
+        text-align: justify;
+        font-size: 20px;
+        align-items: center;
+        line-height: 28px;
+        margin-left: 5px;
+        display: flex;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.004);
+    }
+
+    .news-container-talking-right-top-news {
+        position: absolute;
+        height: 243px;
+        left: 597.5px;
+        right: 318.75px;
+        top: calc(50% - 500px/2);
+        border-radius: 5px;
+
+    }
+
+    .news-container-talking-right-top-news-2 {
+        position: absolute;
+        height: 243px;
+        left: 597.5px;
+        right: 318.75px;
+        background: url(.jpg);
+        border-radius: 5px;
+        top: calc(50% - 243px/2 + 130.61px);
+    }
+
+
+    .news-container-talking-right-top-news-3 {
+        position: absolute;
+        height: 243px;
+        left: 876.25px;
+        right: 40px;
+        top: calc(50% - 500px/2);
+        border-radius: 5px;
+
+    }
+
+    .news-container-talking-right-top-news-4 {
+        position: absolute;
+        height: 243px;
+        left: 876.25px;
+        right: 318.75px;
+        background: url(.jpg);
+        border-radius: 5px;
+        top: calc(50% - 243px/2 + 130.61px);
+    } */
+
+
+
+    .talking-section{
+        display: flex;
+        background-color: aliceblue;
+    }
+        .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        /* background-color: #2196F3; */
+        padding: 10px;
+        flex-wrap: nowrap;
+        border-radius: 10px;
+        }
+
+        .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        border-radius: 10px;
+        }
+
+        .item1 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        width: 542.5px;
+        position: relative;
+        display: grid;
+         overflow: hidden;
+        }
+     
+        
+        .item-1 > img{
+            object-fit: cover;
+            width: 542.5px;
+            height: 500px;
+            object-position: top center;
+        }
+        .item1-text{
+            position: absolute;
+            margin-top: 400px;
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align:justify;
+            color: white;
+            padding-bottom: 10px;
+            border-bottom: 1px solid grey ;        
+        }
+        .see-more{
+            margin-left: 50px;
+            margin-top: 460px;
+            position: absolute;
+            width: auto;
+            height: auto;    
+            color: white;   
+        }
+        .see-more-chewron{
+            margin-left: 150px;
+            margin-top: 460px;
+            position: absolute;
+            width: auto;
+            height: auto;    
+            color: white; 
+        }
+        .item1:hover img{
+            transform: scale(1.1);
+            /* display: none; */
+        }
+        .item1:hover .see-more-chewron{
+           translate: 10px;
+        }
+       
+        .item2 {
+        grid-column-start: 3;
+        grid-column-end:4 ;
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+        display: grid;
+        
+        }
+        .item3{
+            grid-column-start: 3;
+            grid-column-end:4;
+            width: fit-content;
+            height: fit-content;
+            display: grid;
+        }
+        .item4{
+            grid-row-start: 1;
+            grid-row-end:2;
+        }
+        .item5{
+            grid-row-start: 2;
+            grid-row-end:3;
+        }
+        .item2-text-container{
+            position: absolute;
+            display: grid;
+            width: 280px;
+        }
+        .item3-text-container{
+            position: absolute;
+            display: grid;
+            width: 280px;
+        }
+
+        .item4-text-container{
+            position: relative;
+            display: grid;
+            width: 280px;
+        }
+        .item5-text-container{
+            position: absolute;
+            display: grid;
+            width: 280px;
+        }
+        .item2-text{
+            position: absolute;
+            margin-right: 50px;
+            margin-left: 30px;
+            margin-top: 150px;
+            text-align:justify;
+            color: white;
+            padding-bottom: 10px;
+            border-bottom: 1px solid grey ;        
+        }
+       
+        .item3-text{
+            position: absolute;
+            text-align:justify;
+            color: white;
+            margin-top: 150px;
+            margin-right: 50px;
+            margin-left: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid grey ;        
+        }
+        .item4-text{
+            position: absolute;
+            margin-right: 50px;
+            margin-left: 30px;
+            margin-top: 150px;
+            text-align:justify;
+            color: white;
+            padding-bottom: 10px;
+            border-bottom: 1px solid grey ;        
+        }
+        .item5-text{
+            position: absolute;
+            margin-top: -350px;
+            text-align:justify;
+            color: white;
+            padding-bottom: 10px;
+            border-bottom: 1px solid grey ;   
+            margin-right: 50px;
+            margin-left: 30px;     
+        }
+       
+       
+        
+        /* .item3-text-container{
+            position: absolute;
+            display: grid;
+            width: 280px;
+        }
+        .item3-text{
+        
+        position: grid;
+        } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Gogo-style */
+    .Gogo-style {
+        width: 1180px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        height: 405px;
+        /* border: 1px solid grey; */
+    }
+
+    .gogo-style-container {
+        display: flex;
+        gap: 10px;
+    }
+
+    .gogo-style-container-news- {
+        flex: 1;
+        width: 263, 7px;
+        height: 360px;
+        position: relative;
+        border: 1px solid #f1f1f1;
+        overflow: hidden;
+
+    }
+
+    .gogo-style-container-text {
+        margin-top: 11px;
+        margin-left: 10px;
+
+    }
+
+    .gogo-style-container-icons {
+        margin-top: 11px;
+        justify-content: space-between;
+        margin-left: 10px;
+        display: flex;
+        align-content: space-around;
+
+    }
+
+    .gogo-style-container-news-:hover .gogo-style-container-news-img img{
+        transform: scale(1.2);
+    }
+
+    .see-more-item-cover{
+
+    opacity: 0;
+    position: absolute;
+    width: 263.75px;
+    height:230px ;
+    object-fit: cover;
+    inset: 0;
+    display: flex;
+    transition: transform 0.5s;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+}
+    .gogo-style-container-news-img img:hover .see-more-item-cover{
+        opacity: 1;
+        overflow: hidden;
+    }
+
+
+    /* style */
+
+    .Gogo-technology-container {
+        display: flex;
+        width: 1180px;
+        height: 347px;
+        /* border: 1px solid green; */
+        /* justify-content:space-around; */
+        margin-top: 30px;
+        position: relative;
+    }
+
+    .gogo-technology-news {
+        width: 1100px;
+        height: 300px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .gogo-technology-news-item {
+        flex: 1;
+        width: 263.7px;
+        height: 300px;
+        gap: 20px;
+        /* border: 1px solid green; */
+        position: relative;
+
+    }
+
+    .gogo-technology-news-item-text {
+        width: 263.75px;
+        flex: 1;
+        margin-top: 11px;
+
+    }
+
+    .gogo-technology-news-item-img {
+        width: 263px;
+        height: 170px;
+        margin-top: 11px;
+    }
+
+    .gogo-style-container-icons {
+        margin-top: 15px;
+        justify-content: space-between;
+        margin-left: 10px;
+        display: flex;
+        align-content: space-around;
+    }
+
+    /* comic */
+    .gogo-comic-container {
+        display: flex;
+        row-gap: 10px;
+        /* border: 1px solid green; */
+        margin-top: 30px;
+    }
+
+    .gogo-comic-news {
+        width: 542.5px;
+        height: 330px;
+        /* border: 1px solid green; */
+        flex: 1;
+        gap: 10px;
+        flex-direction: column;
+        position: relative;
+
+    }
+
+    .gogo-comic-news-item-img {
+        width: 542.5px;
+        height: 200px;
+        flex: 1;
+        border: 1px solid rgb(0, 0, 0, 0.03);
+
+    }
+
+    .gogo-comic-news-item-footer-container {
+        width: 542.5px;
+        height: 130px;
+        border: 1px solid rgb(0, 0, 0, 0.03);
+        margin-top: 10px;
+    }
+
+    .gogo-comic-news-item-footer-container-text {
+        width: 520.5px;
+        height: 72px;
+        justify-content: center;
+        margin: 11px;
+        font-weight: bold;
+
+    }
+
+
+    .gogo-comic-news-item-footer-container-chewron {
+        width: 520.5px;
+        height: 26px;
+        justify-content: center;
+        margin: 11px;
+        border-top: 1px solid rgb(0, 0, 0, 0.03);
+    }
+
+    
+
+
+
+    /* footer */
+    footer {
+        background-color: black;
+        /* border: 1px solid green; */
+        margin-top: 60px;
+        padding-top: 50px;
+
+    }
+
+    .footer-container {
+        width: 1180px;
+        height: 717.25px;
+        position: relative;
+        justify-content: center;
+        margin: 11px;
+
+
+    }
+
+    .footer-container-feature {
+        display: flex;
+        /* background-color: aquamarine; */
+        width: 946px;
+        height: 322px;
+        /* margin-top: 50px; */
+        align-items: center;
+        position: relative;
+        gap: 10px;
+        justify-content: center;
+        align-content: center;
+        margin-left: 90px;
+
+
+    }
+
+    .footer-container-items {
+        flex: 1;
+        width: 263px;
+        height: 230px;
+        position: relative;
+        overflow: hidden;
+
+    }
+    .footer-container-cover {
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.5s;
+        color: white;
+        background-color: rgb(0, 0, 0, 0.4);
+        inset: 0;
+        overflow: hidden;
+
+    }
+
+
+    .footer-container-items:hover .footer-container-cover{
+        opacity: 1;
+    }
+    .footer-container-items:hover .footer-container-items-img{
+        transform: scale(1.1);
+    }
+
+    .footer-container-items-text {
+        width: 263px;
+        height: 66px;
+        /* border: 1px solid white; */
+        color: white;
+        font-weight: 700px;
+        font-size: 13.67px;
+        line-height: 22px;
+    }
+
+    .footer-container-items-chevron {
+        width: 263px;
+        height: 20px;
+        justify-content: center;
+        margin-top: 11px;
+        /* border: 1px solid white; */
+    }
+
+    .footer-container-feature-2 {
+        position: relative;
+        /* background-color: aquamarine; */
+        width: 946px;
+        height: 322px;
+        align-items: center;
+        position: relative;
+        gap: 10px;
+        justify-content: center;
+        align-content: center;
+        margin-left: 90px;
+        display: flex;
+    }
+
+    /* footer nav */
+    nav {
+        width: auto;
+        display: flex;
+        ;
+    }
+
+    .footer-nav {
+        display: flex;
+        width: 1180px;
+        height: 121px;
+        /* border: 1px solid green; */
+        margin-top: 30px;
+    }
+
+    .footer-nav-top-container {
+        position: relative;
+        gap: 20px;
+        width: 1180px;
+        height: 60px;
+        display: flex;
+        flex: 1;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.03);
+
+    }
+
+    .a-tag {
+        flex: 1;
+    }
+
+    .footer-nav-top-container {
+        position: relative;
+
+    }
+
+    .footer-nav-bottom-container {
+        width: 1180px;
+        height: 60px;
+        margin-top: 110px;
+        
+        position: absolute;
+        display: flex;
+    }
+
+    .bottom-container-right {
+        flex: 1;
+    }
+
+    .bottom-container-left {
+        flex: 1;
+        
+    }
+</style>
+
+<body>
+    <section class="home-top">
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <div class="box">
+                        <img class="logo-img" ; src="./images/Link → gogo-logo.345096b3.png.png" alt="'gogo.img">
+                    </div>
+                </div>
+                <div class="top-nav">
+                    <div class="box">
+                        <ul>
+                            <li>
+                                <a href="https://gogo.mn/i/2" style="font-size:24px; border: none;">Мэдээ
+                                    <i style="font-size: 16px;" class="fa fa-chevron-down"></i>
+                                </a>
+                            </li>
+
+                           <div class="top-nav-grid-container">
+                            <ol>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                                <li>Улс төр</li>
+                            </ol>
+                           </div>
+
+
+
+
+                            <li>
+                                <a href="https://gogo.mn/i/2" style="font-size:24px;border: none">Gogo булан <i style="font-size: 16px;"
+                                        class="fa fa-chevron-down"></i>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://gogo.mn/i/2" style="font-size:24px;border: none">Үзэх
+                                    <i style="font-size: 16px;" class="fa fa-chevron-down"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://gogo.mn/i/2" style="font-size:24px;border: none">English <i
+                                    style="font-size: 16px;"      class="fa fa-chevron-down"></i>
+                                </a>
+                            </li>
+                            <li>
+
+                                <i style="align-items: center;  font-size: 36px;" class="fa-fa-search"></i>
+
+
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="top-widget">
+                    <div class="top-widget-item">
+                        <div class="top-widget-text">Цаг агаар</div>
+                        <div class="top-widget-items">
+                            <div class="material-symbols-outlined">
+                                clear_day
+                            </div>
+                            <div class="top-widget-items-left">&nbsp;17</div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="top-widget-text">Зурхай</div>
+                        <div class="top-widget-items">
+                            <div>
+                                <img style="size: 24px;" src="./images/calendar-icon.7e594c4b.svg.png" >
+                            </div>
+                            <div class="top-widget-items-left">&nbsp;    17</div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="top-widget-text">Валютын ханш</div>
+                        <div class="top-widget-items">
+                            <div>
+                                <p style="font-size: 24px; color: green;">$</p>
+                            </div>
+                            <div class="top-widget-items-left">&nbsp;17</div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="uk-float-right">
+                    <div class="uk-flex; uk-float-middle">
+                        <div>
+                            <a href="" uk-toggle class="uk-display-block-burger-menu">
+                                <img src="https://mgl.gogo.mn/newsn/v4/images/burger-menu.5e79499d.svg" width="28"
+                                    alt=""></a>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+            </header>
+
+    </section>
+
+    <section class="Home-feature-container">
+        <div class="Home-feature">
+            <div class="Home-feature__text">
+                <div class="Home-feature-text-container">
+                    <button class="home-feature-btn">
+                        Нийгэм
+                    </button>
+                    <div class="home-feature-text-h2">
+                        <h2>ХушХан брэнд Европын Холбооны
+                            органик стандартын шаардлагыг
+                            хангаж, баталгаажууллаа</h2>
+                    </div>
+                    <div class="home-feature-text-p">ХушХан брэндийг үйлдвэрлэгч “Норд Роуд” ХХК дэлхийн хамгийн өндөр
+                        шалгууртай стандартуудын нэг болох Европын Холбооны Органик Бүтээгдэхүүний
+                        сертификатыг амжилттай гардан авлаа.</div>
+                    <i style="font-size:24px; " class="fa">&#xf064; 12</i>
+                </div>
+
+            </div>
+            <div class="Home-feature_pic">
+                <img src="./images/-20052024-1716165034-1086895148-viber_image_2024-05-19_17-39-56-157.jpg.png" alt="hushhanbrand">
+                <div class="home-feature-pic-hover">Дэлгэрэнгүй унших-></div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <section style="background-color: rgba(255, 255, 255, 1);">
+        <div class="Home-subfeature">
+            <a class="Home-subfeature-container" href="https://gogo.mn/r/9n0le">
+                <div class="subfeature-item">
+                    <img class="subfeature-item-img"
+                        src="./images/319032-20052024-1716178547-1713307895-aldart_eh_uranholboo.jpg.png" alt="">
+                    <div class="subfeature-item-cover">Унших->
+                        <i style="font-size:24px" class="fa">&#xf054;</i>
+                    </div>
+                    <div class="subfeature-item-title">Маргааш 06:00-18:00 цагт зарим замын хөдөлгөөнийг хязгаарлана
+                    </div>
+
+                </div>
+            </a>
+            <a class="Home-subfeature-container" href="https://gogo.mn/r/9n0le">
+                <div class="subfeature-item">
+                    <img class="subfeature-item-img"
+                        src="./images/319032-20052024-1716178547-1713307895-aldart_eh_uranholboo.jpg.png" alt="">
+                    <div class="subfeature-item-cover">Унших->
+                        <i style="font-size:24px" class="fa">&#xf054;</i>
+                    </div>
+                    <div class="subfeature-item-title">Маргааш 06:00-18:00 цагт зарим замын хөдөлгөөнийг хязгаарлана
+                    </div>
+
+                </div>
+            </a>
+            <a class="Home-subfeature-container" href="https://gogo.mn/r/9n0le">
+                <div class="subfeature-item">
+                    <img class="subfeature-item-img"
+                        src="./images/319032-20052024-1716178547-1713307895-aldart_eh_uranholboo.jpg.png" alt="">
+                    <div class="subfeature-item-cover">Унших->
+                        <i style="font-size:24px" class="fa">&#xf054;</i>
+                    </div>
+                    <div class="subfeature-item-title">Маргааш 06:00-18:00 цагт зарим замын хөдөлгөөнийг хязгаарлана
+                    </div>
+
+                </div>
+            </a>
+        <div>
+            <img src="./images/Container.png" alt="container">
+        </div>
+            
+
+
+
+
+        </div>
+    </section>
+
+
+    <div class="middle-container-header">
+        <div class="box">
+            <span style="display: flex; gap: 10px;">
+            <h1 style="margin: 0; padding: 0;">GoGo </h1>
+                <h1
+                    style="background-color: #407ce8; color: white; width:fit-content; border-radius: 5px; margin: 0; padding: 0;">
+                    Стори</h1>
+            </span>
+        </div>
+    </div>
+    <section class="middle-top">
+        <div class="middle-container">
+            <i style="font-size:24px; align-content: center;" class="fa">&#xf137;</i>
+            <div class="middle-container-item">
+                <div class="middle-container-img">
+                    <img src="./images/1x-1-664ae60adfa75726262287.jpg.png" alt="">
+
+                    <div class="middle-container-text">
+                        Нэг настай гана хүү дэлхийн хамгийн залууи Нэг настай гана хүү дэлхийн хамгийн залууи Нэг настай
+                        гана хүү дэлхийн хамгийн залууи .
+                    </div>
+                    <div class="middle-container-top-logo">
+                        <img src="https://mgl.gogo.mn//newsn/v4/images/author.dece2426.svg" width="30" alt="">
+                    </div>
+                    <div class="view-count">
+                        <i style="align-items: center; justify-content: center;" class="fa fa-eye"
+                            area-hidden="true"></i>233
+                    </div>
+                </div>
+
+            </div>
+            <div class="middle-container-item">
+                <div class="middle-container-img">
+                    <img src="./images/1x-1-664ae60adfa75726262287.jpg.png" alt="">
+
+                    <div class="middle-container-text">
+                        Нэг настай гана хүү дэлхийн хамгийн залуу .
+                    </div>
+                    <div class="middle-container-top-logo">
+                        <img src="https://mgl.gogo.mn//newsn/v4/images/author.dece2426.svg" width="30" alt="">
+                    </div>
+                    <div class="view-count">
+                        <i style="align-items: center; justify-content: center;" class="fa fa-eye"
+                            area-hidden="true"></i>233
+                    </div>
+                </div>
+            </div>
+            <div class="middle-container-item">
+                <div class="middle-container-img">
+                    <img src="./images/1x-1-664ae60adfa75726262287.jpg.png" alt="">
+
+                    <div class="middle-container-text">
+                        Нэг настай гана хүү дэлхийн хамгийн залуу .
+                    </div>
+                    <div class="middle-container-top-logo">
+                        <img src="https://mgl.gogo.mn//newsn/v4/images/author.dece2426.svg" width="30" alt="">
+                    </div>
+                    <div class="view-count">
+                        <i style="align-items: center; justify-content: center;" class="fa fa-eye"
+                            area-hidden="true"></i>233
+                    </div>
+                </div>
+            </div>
+
+            <div class="middle-container-item">
+                <div class="middle-container-img">
+                    <img src="./images/portal-launch-header-scaled-664ac04095b79748409824.jpg.png" alt="">
+
+                    <div class="middle-container-text">
+                        Нэг настай гана хүү дэлхийн хамгийн залуу .
+                    </div>
+                    <div class="middle-container-top-logo">
+                        <img src="https://mgl.gogo.mn//newsn/v4/images/author.dece2426.svg" width="30" alt="">
+
+                    </div>
+                    <div class="view-count">
+                        <i style="align-items: center; justify-content: center;" class="fa fa-eye"
+                            area-hidden="true"></i>233
+                    </div>
+                </div>
+            </div>
+            <div class="middle-container-item">
+                <div class="middle-container-img">
+                    <img src="./images/dnb-664ae49a518ed513635529.jpg.png" alt="">
+
+                    <div class="middle-container-text">
+                        Нэг настай гана хүү дэлхийн хамгийн залуу .
+                    </div>
+                    <div class="middle-container-top-logo">
+                        <img src="https://mgl.gogo.mn//newsn/v4/images/author.dece2426.svg" width="30" alt="">
+                    </div>
+                    <div class="view-count">
+                        <i style="align-items: center; justify-content: center;" class="fa fa-eye"
+                            area-hidden="true"></i>233
+                    </div>
+                </div>
+            </div>
+            <div class="middle-container-item">
+                <div class="middle-container-img">
+                    <img src="./images/dnb-664ae49a518ed513635529.jpg.png" alt="">
+
+                    <div class="middle-container-text">
+                        Нэг настай гана хүү дэлхийн хамгийн залуу .
+                    </div>
+                    <div class="middle-container-top-logo">
+                        <img src="https://mgl.gogo.mn//newsn/v4/images/author.dece2426.svg" width="30" alt="">
+
+                    </div>
+                    <div class="view-count">
+                        <i style="align-items: center; justify-content: center;" class="fa fa-eye"
+                            area-hidden="true"></i>233
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <i style="font-size:24px; align-content: center; display: flex; justify-content: center; align-items: center;"
+                class="fa" ;>&#xf138;</i>
+
+        </div>
+    </section>
+
+
+
+    <section class="middle-news-container">
+        <div class="middle-news-top-container">
+
+            <div style="width: fit-content;height: fit-content;"> Өнөөдөр <img
+                    src="https://mgl.gogo.mn//newsn/v4/images/todaynews.6ba1d8b2.png" width="23" alt=""
+                    style="height: 26px; font-weight: bold;">
+            </div>
+            <div class="calendar-bar">
+                <div class="calendar-bar-header-top">
+                    <div class="calendar-bar-header-top-box"
+                        style="width: 103px; height: 7px; background-color: grey; border-radius: 20px; "></div>
+                    <p>
+                        5-р сарын 20
+                    </p>
+                </div>
+                <div class="calendar-bar-header-top">
+                    <div style="width: 103px; height: 7px; background-color: grey; border-radius: 20px;"></div>
+                    <p>
+                        5-р сарын 21
+                    </p>
+                </div>
+                <div class="calendar-bar-header-top">
+                    <div style="width: 103px; height: 7px; background-color: grey; border-radius: 20px;"></div>
+                    <p>
+                        5-р сарын 22
+                    </p>
+                </div>
+                <div class="calendar-bar-header-top">
+                    <div style="width: 103px; height: 7px; background-color: grey; border-radius: 20px;"></div>
+                    <p>
+                        5-р сарын 23
+                    </p>
+                </div>
+                <div class="calendar-bar-header-top">
+                    <div style="width: 103px; height: 7px; background-color: grey; border-radius: 20px;"></div>
+                    <p>
+                        5-р сарын 24
+                    </p>
+                </div>
+                <div class="calendar-bar-header-top">
+                    <div class="home-calendar-more-btn">
+                        <div class="uk-position-absolute calendar-shower">
+                            ...
+                        </div> <input type="text" id="calendar-datepicker2"
+                            class="calendar-datepicker currency-date-range-input uk-width-1-1" style="opacity: 0;">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="middle-news-left-article">
+                <div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div><div class="news-container-article-news">
+                    <div class="news-container-article-news-img">
+                        <img src="./images/319041-20052024-1716188072-307807547-Em_huleen_avah1.jpg.png" alt="">
+                    </div>
+                    <div class="news-container-article-news-header">Ардчилсан нам УИХ-ын сонгуульд оролцох нэр
+                        дэвшигчдийн бүртгэлээ СЕХ-д хүлээлгэн өглөө
+                        <div class="news-container-article-news-text">Эх хүүхдийн эрүүл мэндийн төв нь эх, хүүхдийн
+                            лавлагаа шатны
+                            тусламж үйлчилгээг үндэсний хэмжээнд үзүүлдэг. Манай төвд хор
+                            <div class="news-container-aside-trend-news-item-caption-icon">
+                                <i style="font-size:14px; " class="fa">&#xf064 5056</i>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    chat 70
+                                </span>
+                                <span style="font-size:14px"; class="material-symbols-outlined">
+                                    schedule 23 цагийн
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="news-container-see-more">
+                   <a href="https://gogo.mn/">
+                    <h3>Цааш үзэх</h3>  
+                   </a> 
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="news-container-aside">
+            <h1 style="margin-left: 20px;">Онцлох мэдээ</h1>
+            <div class="news-container-aside-top">
+                <div class="news-container-aside-top-img">
+                    <img src="./images/-20052024-1716174365-692108076-51611966566.jpg.png" alt="">
+                </div>
+                <div class="news-container-aside-top-text">Хариуцлагатай
+                    хүний нөөц" өдөрлөг зохион байгууллаа
+                </div>
+                <div>
+                    <i style="font-size:12px; " class="fa">&#xf064; 12</i>
+                </div>
+
+            </div>
+            <div class="news-container-aside-top">
+                <div class="news-container-aside-top-img">
+                    <img src="./images/-20052024-1716174365-692108076-51611966566.jpg.png" alt="">
+                </div>
+                <div class="news-container-aside-top-text">Хариуцлагатай
+                    хүний нөөц" өдөрлөг зохион байгууллаа
+                </div>
+                <div>
+                    <i style="font-size:12px; " class="fa">&#xf064; 12</i>
+                </div>
+            </div>
+            <div class="news-container-aside-top">
+                <div class="news-container-aside-top-img">
+                    <img src="./images/-20052024-1716174365-692108076-51611966566.jpg.png" alt="">
+                </div>
+                <div class="news-container-aside-top-text">Хариуцлагатай
+                    хүний нөөц" өдөрлөг зохион байгууллаа
+                </div>
+                <div>
+                    <i style="font-size:12px; " class="fa">&#xf064; </i>
+                </div>
+            </div>
+
+            <div class="news-container-aside-top">
+                <div class="news-container-aside-top-img">
+                    <img src="./images/-20052024-1716174365-692108076-51611966566.jpg.png" alt="">
+                </div>
+                <div class="news-container-aside-top-text">Хариуцлагатай
+                    хүний нөөц" өдөрлөг зохион байгууллаа
+                </div>
+                <div>
+                    <i style="font-size:12px; " class="fa">&#xf064; </i>
+                </div>
+            </div>
+
+            <div class="news-container-aside-trend-news">
+                <h1>Тренд мэдээ</h1>
+                <div class="news-container-aside-trend-news-item">
+                    <div class="news-container-aside-trend-news-item-number">1</div>
+                    <div class="news-container-aside-trend-news-item-caption">
+                        Уулчин залуус хөтөчгүйгээр
+                        Эверестийн оргилд гарч чадсан нь
+                        гэрэл зураг, дүрс бичлэгээр
+                        нотлогджээ
+                        <div class="news-container-aside-trend-news-item-caption-icon">
+                            <i style="font-size:12px; " class="fa">&#xf064 5056</i>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                chat 70
+                            </span>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                schedule 23 цагийн
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-aside-trend-news-item">
+                    <div class="news-container-aside-trend-news-item-number">2</div>
+                    <div class="news-container-aside-trend-news-item-caption">
+                        Уулчин залуус хөтөчгүйгээр
+                        Эверестийн оргилд гарч чадсан нь
+                        гэрэл зураг, дүрс бичлэгээр
+                        нотлогджээ
+                        <div class="news-container-aside-trend-news-item-caption-icon">
+                            <i style="font-size:12px; " class="fa">&#xf064 5056</i>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                chat 70
+                            </span>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                schedule 23 цагийн
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-aside-trend-news-item">
+                    <div class="news-container-aside-trend-news-item-number">3</div>
+                    <div class="news-container-aside-trend-news-item-caption">
+                        Уулчин залуус хөтөчгүйгээр
+                        Эверестийн оргилд гарч чадсан нь
+                        гэрэл зураг, дүрс бичлэгээр
+                        нотлогджээ
+                        <div class="news-container-aside-trend-news-item-caption-icon">
+                            <i style="font-size:12px; " class="fa">&#xf064 5056</i>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                chat 70
+                            </span>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                schedule 23 цагийн
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-aside-trend-news-item">
+                    <div class="news-container-aside-trend-news-item-number">4</div>
+                    <div class="news-container-aside-trend-news-item-caption">
+                        Уулчин залуус хөтөчгүйгээр
+                        Эверестийн оргилд гарч чадсан нь
+                        гэрэл зураг, дүрс бичлэгээр
+                        нотлогджээ
+                        <div class="news-container-aside-trend-news-item-caption-icon">
+                            <i style="font-size:12px; " class="fa">&#xf064 5056</i>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                chat 70
+                            </span>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                schedule 23 цагийн
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-aside-trend-news-item">
+                    <div class="news-container-aside-trend-news-item-number">5</div>
+                    <div class="news-container-aside-trend-news-item-caption">
+                        Уулчин залуус хөтөчгүйгээр
+                        Эверестийн оргилд гарч чадсан нь
+                        гэрэл зураг, дүрс бичлэгээр
+                        нотлогджээ
+                        <div class="news-container-aside-trend-news-item-caption-icon">
+                            <i style="font-size:12px; " class="fa">&#xf064 5056</i>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                chat 70
+                            </span>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                schedule 23 цагийн
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-aside-trend-news-item">
+                    <div class="news-container-aside-trend-news-item-number">6</div>
+                    <div class="news-container-aside-trend-news-item-caption">
+                        Уулчин залуус хөтөчгүйгээр
+                        Эверестийн оргилд гарч чадсан нь
+                        гэрэл зураг, дүрс бичлэгээр
+                        нотлогджээ
+                        <div class="news-container-aside-trend-news-item-caption-icon">
+                            <i style="font-size:12px; " class="fa">&#xf064 5056</i>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                chat 70
+                            </span>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                schedule 23 цагийн
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-aside-trend-news-item">
+                    <div class="news-container-aside-trend-news-item-number">7</div>
+                    <div class="news-container-aside-trend-news-item-caption">
+                        Уулчин залуус хөтөчгүйгээр
+                        Эверестийн оргилд гарч чадсан нь
+                        гэрэл зураг, дүрс бичлэгээр
+                        нотлогджээ
+                        <div class="news-container-aside-trend-news-item-caption-icon">
+                            <i style="font-size:12px; " class="fa">&#xf064 5056</i>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                chat 70
+                            </span>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                schedule 23 цагийн
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-aside-trend-news-item">
+                    <div class="news-container-aside-trend-news-item-number">8</div>
+                    <div class="news-container-aside-trend-news-item-caption">
+                        Уулчин залуус хөтөчгүйгээр
+                        Эверестийн оргилд гарч чадсан нь
+                        гэрэл зураг, дүрс бичлэгээр
+                        нотлогджээ
+                        <div class="news-container-aside-trend-news-item-caption-icon">
+                            <i style="font-size:12px; " class="fa">&#xf064 5056</i>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                chat 70
+                            </span>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                schedule 23 цагийн
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-aside-trend-news-item">
+                    <div class="news-container-aside-trend-news-item-number">9</div>
+                    <div class="news-container-aside-trend-news-item-caption">
+                        Уулчин залуус хөтөчгүйгээр
+                        Эверестийн оргилд гарч чадсан нь
+                        гэрэл зураг, дүрс бичлэгээр
+                        нотлогджээ
+                        <div class="news-container-aside-trend-news-item-caption-icon">
+                            <i style="font-size:12px; " class="fa">&#xf064 5056</i>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                chat 70
+                            </span>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                schedule 23 цагийн
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-container-aside-trend-news-item">
+                    <div class="news-container-aside-trend-news-item-number">10</div>
+                    <div class="news-container-aside-trend-news-item-caption">
+                        Уулчин залуус хөтөчгүйгээр
+                        Эверестийн оргилд гарч чадсан нь
+                        гэрэл зураг, дүрс бичлэгээр
+                        нотлогджээ
+                        <div class="news-container-aside-trend-news-item-caption-icon">
+                            <i style="font-size:12px; " class="fa">&#xf064 5056</i>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                chat 70
+                            </span>
+                            <span style="font-size:12px"; class="material-symbols-outlined">
+                                schedule 23 цагийн
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="news-container-talking">
+        <!-- <main>
+            <div class="grid-grid-container">
+                <div class="grid-item">Элчин сайд
+                    <img  src="" alt="">
+
+                </div>
+                <div class="grid-item">main</div>
+                <div class="grid-item">aside</div>
+                <div class="grid-item">aside</div>
+                <div class="grid-item">aside</div>
+
+                
+
+            </div>
+        </main> -->
+        <!-- <div>
+            <div class="news-container-talking-left">
+                <img src="./images/318590-06052024-1714983747-1094992622-elcin_said_(11)1.jpg.png" alt="">
+                <h3>
+                    Элчин сайд Алексей Николаевич: “Роснефть”-
+                    ээс гадна ОХУ-ын таван компани Монголд
+                    нефть нийлүүлэхэд бэлэн
+                </h3>
+            </div>
+            <div class="news-container-talking-right-top-news">
+                <img src="./images/318699-09052024-1715225876-1715075915-Tumursukh_zurag1.jpg.png" alt="">
+            </div>
+            <div class="news-container-talking-right-top-news-2">
+                <img src="./images/318699-09052024-1715225876-1715075915-Tumursukh_zurag1.jpg.png" alt="">
+            </div>
+            <div class="news-container-talking-right-top-news-3">
+                <img src="./images/318699-09052024-1715225876-1715075915-Tumursukh_zurag1.jpg.png" alt="">
+            </div>
+            <div class="news-container-talking-right-top-news-4">
+                <img src="./images/318699-09052024-1715225876-1715075915-Tumursukh_zurag1.jpg.png" alt="">
+            </div>
+
+        </div>
+        </div> -->
+        <div class="grid-container">
+            <div class="item1">
+                <img  src="./images/318590-06052024-1714983747-1094992622-elcin_said_(11)1.jpg.png" alt="elchin-said">
+                 <div class="item1-text"> Элчин сайд Алексей Николаевич: “Роснефть”-
+                    ээс гадна ОХУ-ын таван компани Монголд
+                    нефть нийлүүлэхэд бэлэн </div>
+               
+                <div class="see-more">Дэлгэрэнгүй</div>
+                <div class="see-more-chewron">-></div>
+                <div style="background-color: aqua;color:white;; width: fit-content; height: fit-content; position: absolute; margin-top: 370px; margin-left: 50px; border-radius: 5px;">Гутал</div>  
+            </div>
+            <div class="item2">
+                <img src="./images/318606-07052024-1715062467-673307045-414706383_122146674050023665_4489857163949139215_n.jpg.png" alt="">
+               <div class="item2-text-container">
+                    <div class="item2-text"> Элчин сайд Алексей Николаевич: “Роснефть”-
+                        ээс гадна ОХУ-ын таван компани 
+                        </div>
+                    <div style="background-color: aqua;color:white;; width: fit-content; height: fit-content; position: absolute; margin-top: 370px; margin-left: 50px; border-radius: 5px;">Гутал</div>  
+              </div>
+            </div>
+            <div class="item3">
+                <img src="./images/318606-07052024-1715062467-673307045-414706383_122146674050023665_4489857163949139215_n.jpg.png" alt="">
+                <div class="item3-text-container">
+                    <div class="item3-text"> Элчин сайд Алексей Николаевич: “Роснефть”-
+                        ээс гадна ОХУ-ын таван 
+                        </div>
+                    <div style="background-color: aqua;color:white;; width: fit-content; height: fit-content; position: absolute; margin-top: 370px; margin-left: 50px; border-radius: 5px;">Гутал</div>  
+              </div>
+            </div>  
+            <div class="item4">
+                <img src="./images/318606-07052024-1715062467-673307045-414706383_122146674050023665_4489857163949139215_n.jpg.png" alt="">
+                <div class="item4-text-container">
+                    <div class="item4-text"> Элчин сайд Алексей Николаевич: “Роснефть”-
+                        ээс гадна ОХУ-ын таван компани 
+                        </div>
+                    <!-- <div style="background-color: aqua;color:white;; width: fit-content; height: fit-content; position: absolute; margin-top: 370px; margin-left: 50px; border-radius: 5px;">Гутал</div>   -->
+              </div>
+            </div>
+            <div class="item5">
+                <img src="./images/318606-07052024-1715062467-673307045-414706383_122146674050023665_4489857163949139215_n.jpg.png" alt="">
+                <div class="item5-text-container">
+                    <div class="item5-text"> Элчин сайд Алексей Николаевич: “Роснефть”-
+                        ээс гадна ОХУ-ын таван компани 
+                        </div>
+                    <div style="background-color: aqua;color:white;; width: fit-content; height: fit-content; position: absolute;  margin-left: 50px; border-radius: 5px;">Гутал</div>  
+              </div>
+            </div>
+           
+          </div>
+        </div>
+
+    </section>
+    <div style="margin-top: 40px;" class="box">
+        <span style="display: flex; gap: 10px; ">
+        <h1 style="margin: 0; padding: 0;">GoGo </h1>
+            <h2
+                style="background-color: #407ce8; color: white; width:fit-content; border-radius: 5px; margin: 0; padding: 0;">
+                хэв маяг</h2>
+        </span>
+    </div>
+    <section class="Gogo-style">
+
+        <div class="gogo-style-container">
+            <i style="font-size:24px; align-content: center;" class="fa">&#xf137;</i>
+            <div class="gogo-style-container-news-">
+                <div class="gogo-style-container-news-img">
+                    <img src="./images/318942-17052024-1715903158-1775146396-zurag-161.jpg.png" alt="">
+                </div>
+                <div class="gogo-style-container-text">Хариуцлагатай
+                    хүний нөөц" өдөрлөг зохион байгууллаа.
+                </div>
+                <div class="gogo-style-container-icons">
+                    <i style="font-size:16px; " class="fa">&#xf064; 12</i>
+
+                    <span class="material-symbols-outlined">
+                        chat
+                    </span>
+                </div>
+            </div>
+
+                <div class="see-more-item-cover">Унших->
+                    <i style="font-size:24px" class="fa">&#xf054;</i>
+                </div>
+                
+            <div class="gogo-style-container-news-">
+                <div class="gogo-style-container-news-img">
+                    <img src="./images/318942-17052024-1715903158-1775146396-zurag-161.jpg.png" alt="">
+                </div>
+                <div class="gogo-style-container-text">Хариуцлагатай
+                    хүний нөөц" өдөрлөг зохион байгууллаа
+                </div>
+                <div gogo-style-container-icons>
+                    <i style="font-size:16px; " class="fa">&#xf064; 12</i>
+
+                    <span class="material-symbols-outlined">
+                        chat
+                    </span>
+                </div>
+            </div>
+            <div class="gogo-style-container-news-">
+                <div class="gogo-style-container-news-img">
+                    <img src="./images/318942-17052024-1715903158-1775146396-zurag-161.jpg.png" alt="">
+                </div>
+                <div class="gogo-style-container-text">Хариуцлагатай
+                    хүний нөөц" өдөрлөг зохион байгууллаа
+                </div>
+                <div gogo-style-container-icons>
+                    <i style="font-size:16px; " class="fa">&#xf064; 12</i>
+
+                    <span class="material-symbols-outlined">
+                        chat
+                    </span>
+                </div>
+            </div>
+            <div class="gogo-style-container-news-">
+                <div class="gogo-style-container-news-img">
+                    <img src="./images/318942-17052024-1715903158-1775146396-zurag-161.jpg.png" alt="">
+                </div>
+                <div class="gogo-style-container-text">Хариуцлагатай
+                    хүний нөөц" өдөрлөг зохион байгууллаа
+                </div>
+                <div class="gogo-style-container-icons">
+                    <i style="font-size:16px; " class="fa">&#xf064; 12</i>
+
+                    <span class="material-symbols-outlined">
+                        chat
+                    </span>
+                </div>
+            </div>
+            <i style="font-size:24px; justify-content: center;align-content: center;" class="fa">&#xf138;</i>
+        </div>
+    </section>
+    <h1>Технологи</h1>
+    <section class="Gogo-technology-container">
+
+        <div class="gogo-technology-news">
+            <i style="font-size:24px; align-content: center;" class="fa">&#xf137;</i>
+            <div class="gogo-technology-news-item">
+                <div class="gogo-technology-news-item-img">
+                    <img src="./images/318988-17052024-1715953693-1771375261-45f38e94-8bde-4e09-91c0-31c50b3bd415.jpg.png"
+                        alt="">
+                </div>
+                <div class="gogo-technology-news-item-text">
+                    “Хиймэл оюунаас цаадахыг хар"
+                    - Cая ам.доллароо өсгөх шинэ
+                    хувилбарууд
+                </div>
+                <div class="gogo-style-container-icons">
+                    <i style="font-size:16px; " class="fa">&#xf064; 12</i>
+
+                    <span class="material-symbols-outlined">
+                        chat
+                    </span>
+                </div>
+            </div>
+            <div class="gogo-technology-news-item">
+                <div class="gogo-technology-news-item-img">
+                    <img src="./images/318988-17052024-1715953693-1771375261-45f38e94-8bde-4e09-91c0-31c50b3bd415.jpg.png"
+                        alt="">
+                </div>
+                <div class="gogo-technology-news-item-text">
+                    “Хиймэл оюунаас цаадахыг хар"
+                    - Cая ам.доллароо өсгөх шинэ
+                    хувилбарууд
+                </div>
+                <div class="gogo-style-container-icons">
+                    <i style="font-size:16px; " class="fa">&#xf064; 12</i>
+
+                    <span class="material-symbols-outlined">
+                        chat
+                    </span>
+                </div>
+            </div>
+            <div class="gogo-technology-news-item">
+                <div class="gogo-technology-news-item-img">
+                    <img src="./images/318988-17052024-1715953693-1771375261-45f38e94-8bde-4e09-91c0-31c50b3bd415.jpg.png"
+                        alt="">
+                </div>
+                <div class="gogo-technology-news-item-text">
+                    “Хиймэл оюунаас цаадахыг хар"
+                    - Cая ам.доллароо өсгөх шинэ
+                    хувилбарууд
+                </div>
+                <div class="gogo-style-container-icons">
+                    <i style="font-size:16px; " class="fa">&#xf064; 12</i>
+
+                    <span class="material-symbols-outlined">
+                        chat
+                    </span>
+                </div>
+            </div>
+            <div class="gogo-technology-news-item">
+                <div class="gogo-technology-news-item-img">
+                    <img src="./images/318988-17052024-1715953693-1771375261-45f38e94-8bde-4e09-91c0-31c50b3bd415.jpg.png"
+                        alt="">
+                </div>
+                <div class="gogo-technology-news-item-text">
+                    “Хиймэл оюунаас цаадахыг хар"
+                    - Cая ам.доллароо өсгөх шинэ
+                    хувилбарууд
+                </div>
+                <div class="gogo-style-container-icons">
+                    <i style="font-size:16px; " class="fa">&#xf064; 12</i>
+
+                    <span class="material-symbols-outlined">
+                        chat
+                    </span>
+                </div>
+            </div>
+            <i style="font-size:24px; justify-content: center;align-content: center;" class="fa">&#xf138;</i>
+        </div>
+    </section>
+
+    <section class="gogo-comic-container">
+        <i style="font-size:24px; align-content: center;" class="fa">&#xf137;</i>
+        <div class="gogo-comic-news">
+            <div class="gogo-comic-news-item-img">
+                <img src="./images/comic-153411-688093610.jpeg.png" alt="">
+            </div>
+            <div class="gogo-comic-news-item-footer-container">
+                <div class="gogo-comic-news-item-footer-container-text">
+                    Нэг өрөөнд хамт хэвтсэн энэ хэцүү хүний ДАТА НЬ ДУУСААСАЙ
+                </div>
+                <div class="gogo-comic-news-item-footer-container-chewron">
+                    vrve
+                </div>
+            </div>
+        </div>
+        <div class="gogo-comic-news">
+            <div class="gogo-comic-news-item-img">
+                <img src="./images/comic-153411-688093610.jpeg.png" alt="">
+            </div>
+            <div class="gogo-comic-news-item-footer-container">
+                <div class="gogo-comic-news-item-footer-container-text">
+                    Нэг өрөөнд хамт хэвтсэн энэ хэцүү хүний ДАТА НЬ ДУУСААСАЙ
+                </div>
+                <div class="gogo-comic-news-item-footer-container-chewron">
+
+                </div>
+            </div>
+        </div>
+        <i style="font-size:24px; justify-content: center;align-content: center;" class="fa">&#xf138;</i>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-container">
+                <div class="footer-container-feature">
+                    <div class="footer-container-items">
+                        <div class="footer-container-items-img">
+                            <img src="./images/ganhuyag5-164849-22565914911.jpeg.png" alt="gankhuyg">
+                        </div>
+                        <div class="footer-container-items-text">
+                            "Мэдээлэл, технологийн хичээлээр
+                            Windows заасаар байна, үүнийг
+                            шинэчлэх цаг болсон"
+                        </div>
+                        <div class="footer-container-cover">Унших->
+                            <i style="font-size:24px" class="fa">&#xf054;</i>
+                        </div>
+                        <div class="footer-container-items-chevron">
+                        </div>
+                    </div>
+                    <div class="footer-container-items">
+                        <div class="footer-container-items-img">
+                            <img src="./images/ganhuyag5-164849-22565914911.jpeg.png" alt="gankhuyg">
+                        </div>
+                        <div class="footer-container-items-text">
+                            "Мэдээлэл, технологийн хичээлээр
+                            Windows заасаар байна, үүнийг
+                            шинэчлэх цаг болсон"
+                        </div>
+                        <div class="footer-container-cover">Унших->
+                            <i style="font-size:24px" class="fa">&#xf054;</i>
+                        </div>
+                        <div class="footer-container-items-chevron"> </div>
+                    </div>
+                    <div class="footer-container-items">
+                        <div class="footer-container-items-img">
+                            <img src="./images/ganhuyag5-164849-22565914911.jpeg.png" alt="gankhuyg">
+                        </div>
+                        <div class="footer-container-items-text">
+                            "Мэдээлэл, технологийн хичээлээр
+                            Windows заасаар байна, үүнийг
+                            шинэчлэх цаг болсон"
+                        </div>
+                        <div class="footer-container-cover">Унших->
+                            <i style="font-size:24px" class="fa">&#xf054;</i>
+                        </div>
+                        <div class="footer-container-items-chevron">
+                        </div>
+                    </div>
+                    <div class="footer-container-items">
+                        <div class="footer-container-items-img">
+                            <img src="./images/ganhuyag5-164849-22565914911.jpeg.png" alt="gankhuyg">
+                        </div>
+                        <div class="footer-container-cover">Унших->
+                            <i style="font-size:24px" class="fa">&#xf054;</i>
+                        </div>
+                        <div class="footer-container-items-text">
+                            "Мэдээлэл, технологийн хичээлээр
+                            Windows заасаар байна, үүнийг
+                            шинэчлэх цаг болсон"
+                        </div>
+                        <div class="footer-container-items-chevron">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-container-feature-2">
+                    <div class="footer-container-items">
+                        <div class="footer-container-items-img">
+                            <img src="./images/ganhuyag5-164849-22565914911.jpeg.png" alt="gankhuyg">
+                        </div>
+                        <div class="footer-container-cover">Унших->
+                            <i style="font-size:24px" class="fa">&#xf054;</i>
+                        </div>
+                        <div class="footer-container-items-text">
+                            "Мэдээлэл, технологийн хичээлээр
+                            Windows заасаар байна, үүнийг
+                            шинэчлэх цаг болсон"
+                        </div>
+                        <div class="footer-container-items-chevron">
+                        </div>
+                    </div>
+                    <div class="footer-container-items">
+                        <div class="footer-container-items-img">
+                            <img src="./images/ganhuyag5-164849-22565914911.jpeg.png" alt="gankhuyg">
+                        </div>
+                        <div class="footer-container-cover">Унших->
+                            <i style="font-size:24px" class="fa">&#xf054;</i>
+                        </div>
+                        <div class="footer-container-items-text">
+                            "Мэдээлэл, технологийн хичээлээр
+                            Windows заасаар байна, үүнийг
+                            шинэчлэх цаг болсон"
+                        </div>
+                        <div class="footer-container-items-chevron">
+                        </div>
+                    </div>
+                    <div class="footer-container-items">
+                        <div class="footer-container-items-img">
+                            <img src="./images/ganhuyag5-164849-22565914911.jpeg.png" alt="gankhuyg">
+                        </div>
+                        <div class="footer-container-items-text">
+                            "Мэдээлэл, технологийн хичээлээр
+                            Windows заасаар байна, үүнийг
+                            шинэчлэх цаг болсон"
+                        </div>
+                        <div class="footer-container-cover">Унших->
+                            <i style="font-size:24px" class="fa">&#xf054;</i>
+                        </div>
+                        <div class="footer-container-items-chevron">
+                        </div>
+                    </div>
+                    <div class="footer-container-items">
+                        <div class="footer-container-items-img">
+                            <img src="./images/ganhuyag5-164849-22565914911.jpeg.png" alt="gankhuyg">
+                        </div>
+                        <div class="footer-container-cover">Унших->
+                            <i style="font-size:24px" class="fa">&#xf054;</i>
+                        </div>
+                        <div class="footer-container-items-text">
+                            "Мэдээлэл, технологийн хичээлээр
+                            Windows заасаар байна, үүнийг
+                            шинэчлэх цаг болсон"
+                        </div>
+                        <div class="footer-container-items-chevron">
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+    </footer>
+
+    <nav>
+        <div class="footer-nav">
+            <div class="footer-nav-top-container">
+                <img src="./images/Link → gogo-logo.345096b3.png.png" alt="">
+                <div class="a-tag">
+                    <a class="footer-nav-top-container-a" href="https://gogo.mn/about-us">
+                    <img  src="https://mgl.gogo.mn/newsn/v4/images/tech.a4b28dbb.png" alt="gogo-logo" style="width: 15px;"
+                        class="footer-logo">
+                        <img src="https://mgl.gogo.mn/newsn/v4/images/tech.a4b28dbb.png"
+                            alt="gogo-logo" width="15" ; class="footer-logo">&nbsp; Бидний тухай
+                    </a>
+                </div>
+                <div class="a-tag">
+                    <a class="footer-nav-top-container-a" href="https://gogo.mn/about-us" >
+                        <img
+                        src="https://mgl.gogo.mn/newsn/v4/images/tech.a4b28dbb.png" alt="gogo logo" width="15"
+                        class="footer-logo"><img src="https://mgl.gogo.mn/newsn/v4/images/tech.a4b28dbb.png"
+                            alt="gogo logo" width="15" ; class="footer-logo">&nbsp; Бидний тухай
+                    </a>
+                </div>
+                <div class="a-tag">
+                    <a class="footer-nav-top-container-a" href="https://gogo.mn/about-us" >
+                        <img
+                        src="https://mgl.gogo.mn/newsn/v4/images/tech.a4b28dbb.png" alt="gogo logo" width="15"
+                        class="footer-logo"><img src="https://mgl.gogo.mn/newsn/v4/images/tech.a4b28dbb.png"
+                            alt="gogo logo" width="15" ; class="footer-logo">&nbsp; Бидний тухай
+                    </a>
+                </div>
+                <div class="a-tag">
+                    <a class="footer-nav-top-container-a" href="https://gogo.mn/about-us"> <img
+                        src="https://mgl.gogo.mn/newsn/v4/images/tech.a4b28dbb.png" alt="gogo logo" width="15"
+                        class="footer-logo"><img src="https://mgl.gogo.mn/newsn/v4/images/tech.a4b28dbb.png"
+                            alt="gogo logo" width="15" ; class="footer-logo">&nbsp; Бидний тухай
+                    </a>
+                </div>
+                <div class="a-tag">
+                    <a class="footer-nav-top-container-a" href="https://gogo.mn/about-us" >
+                        <img
+                        src="https://mgl.gogo.mn/newsn/v4/images/tech.a4b28dbb.png" alt="gogo logo" width="15"
+                        class="footer-logo"><img src="https://mgl.gogo.mn/newsn/v4/images/tech.a4b28dbb.png"
+                            alt="gogo logo" width="15" ; class="footer-logo">&nbsp; Бидний тухай
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-nav-bottom-container">
+            <div class="bottom-container-right">
+                © 2007 -
+                2024
+                Монгол Контент ХХК &nbsp;&nbsp;•&nbsp;&nbsp;
+                Бүх эрх хуулиар хамгаалагдсан
+            </div>
+            <div class="bottom-container-left">
+                <span>
+                    <img src="./images/Link → SVG (1).png" alt="">
+                    <img src="./images/Link → SVG.png" alt="">
+                    <img src="./images/Vector (1).png" alt="">
+                    <img src="./images/Vector.png" alt="">
+
+                </span>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
